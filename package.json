@@ -1,0 +1,21 @@
+{
+  "name": "woocommerce-image-disclaimer",
+  "version": "1.0.0",
+  "author": "netzstrategen <hallo@netzstrategen.com>",
+  "licenses": [
+    {
+      "type": "GPL-2.0",
+      "url": "http://www.gnu.org/licenses/gpl-2.0"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "del": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "run-sequence": "^1.1.2",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-sass": "3.1.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}
