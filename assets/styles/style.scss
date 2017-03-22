@@ -3,17 +3,12 @@
   position: relative;
   top: -30px;
   height: 30px;
-  margin: 1px;
   clear: both;
   transition: all .2s;
-  background: rgba(255,255,255,.6);
-  color: #999;
+  background: rgba(0, 0, 0, .5);
+  color: #fff;
   font-size: 80%;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
-
-  &:hover {
-    color: #666;
-  }
 }
