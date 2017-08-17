@@ -2,7 +2,7 @@
 
 /*
   Plugin Name: WooCommerce Image Disclaimer
-  Version: 1.1.0
+  Version: 1.1.1
   Text Domain: woocommerce-image-disclaimer
   Description: Display a text (e.g. a disclaimer) on WooCommerce product images.
   Author: netzstrategen
