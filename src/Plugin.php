@@ -17,7 +17,7 @@ class Plugin {
    *
    * @var string
    */
-  const PREFIX = 'woocommerce-image-disclaimer';
+  const PREFIX = 'image-disclaimer';
 
   /**
    * Gettext localization domain.
