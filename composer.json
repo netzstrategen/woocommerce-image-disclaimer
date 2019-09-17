@@ -8,9 +8,6 @@
             "homepage": "https://netzstrategen.com"
         }
     ],
-    "dist": {
-        "url": "git@github.com:netzstrategen/woocommerce-image-disclaimer.git"
-    },
     "require": {
         "php": ">=7.1.0"
     }
