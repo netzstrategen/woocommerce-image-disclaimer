@@ -57,7 +57,7 @@ class Plugin {
    */
   public static function woocommerce_single_product_image_thumbnail_html($content = NULL) {
     $match = 'class="woocommerce-product-gallery__image"';
-    $disclaimer = ' title="' . __('Photo may show optional equipment not included in delivery.', Plugin::L10N) . '"';
+    $disclaimer = ' data-image-disclaimer="' . __('Photo may show optional equipment not included in delivery.', Plugin::L10N) . '"';
     return str_replace($match, $match . $disclaimer, $content);
   }
 
