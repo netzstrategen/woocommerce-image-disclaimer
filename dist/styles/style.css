@@ -1,16 +1,23 @@
-.disclaimer-overlay {
-  display: block;
+.woocommerce-product-gallery__image {
   position: relative;
-  top: -30px;
+}
+
+.woocommerce-product-gallery__image:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
   height: 30px;
   clear: both;
   transition: all .2s;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   font-size: 80%;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
+  content: attr(data-image-disclaimer);
 }
 
 .lg-sub-html span {

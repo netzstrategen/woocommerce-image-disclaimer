@@ -36,7 +36,7 @@ class Plugin {
    */
   public static function init() {
     add_action('wp_enqueue_scripts', __CLASS__ . '::wp_enqueue_scripts');
-    
+
     add_filter('woocommerce_single_product_image_thumbnail_html', __CLASS__ .  '::woocommerce_single_product_image_thumbnail_html', 20);
   }
 
@@ -50,11 +50,15 @@ class Plugin {
   }
 
   /**
+   * Add image disclaimer text as title of wrapping link.
+   * Text displayed in front-end via CSS pseudo element.
+   *
    * @implements woocommerce_single_product_image_thumbnail_html
    */
   public static function woocommerce_single_product_image_thumbnail_html($content = NULL) {
-    $disclaimer = '<span class="disclaimer-overlay">' . __('Photo may show optional equipment not included in delivery.', Plugin::L10N) . '</span>';
-    return preg_replace('/(<img[^>]+>(?:<\/img>)?)/i', '$1' . $disclaimer, $content);
+    $match = 'class="woocommerce-product-gallery__image"';
+    $disclaimer = ' data-image-disclaimer="' . __('Photo may show optional equipment not included in delivery.', Plugin::L10N) . '"';
+    return str_replace($match, $match . $disclaimer, $content);
   }
 
   /**
