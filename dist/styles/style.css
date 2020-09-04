@@ -20,7 +20,8 @@
   content: attr(data-image-disclaimer);
 }
 
-.lg-sub-html span {
+.lg-sub-html span,
+.fancybox-caption__image-disclaimer {
   display: block;
   font-size: 11px;
   color: #bfbfbf;
