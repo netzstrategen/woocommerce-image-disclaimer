@@ -12,7 +12,7 @@
 
       // Support for fancybox.
       if (typeof $.fn.fancybox === 'function' && $('body').hasClass('woocommerce') && $('.images').length > 0) {
-        $(document).on('beforeShow.fb', function( e, instance, slide ) {
+        $(document).on('beforeShow.fb', function(e, instance, slide) {
           if (!$('.fancybox-caption__image-disclaimer').length) {
             $('.fancybox-caption').append('<div class="fancybox-caption__image-disclaimer">' + disclaimer + '</div>');
           }
